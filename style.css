@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    color: #444;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #FF9A9E;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #FF6F61;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #FF9A9E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.project-item, .experience-item {
+    background: #FFE0E0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project-item h3, .experience-item h3 {
+    color: #FF6F61;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.project-item p, .experience-item p {
+    font-size: 1rem;
+    color: #555;
+}
