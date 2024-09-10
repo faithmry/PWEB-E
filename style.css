@@ -7,64 +7,95 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
-    color: #444;
-    line-height: 1.6;
+    background-color: #0d0d0d;  /* Darker background */
+    color: #e0e0e0;  /* Light grey for text */
+    line-height: 1.8;
 }
 
+/* Container */
 .container {
-    width: 85%;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
+/* Header Section */
 header {
-    background: #FF9A9E;
-    color: white;
-    padding: 40px 0;
+    background: rgba(15, 15, 15, 0.85);  /* Transparent dark grey */
+    color: #ffffff;
+    padding: 60px 0;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /* Deeper shadow for a luxurious feel */
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #d4af37;  /* Gold for elegance */
 }
 
 header p {
     font-size: 1.3rem;
     font-weight: 300;
     margin-top: 10px;
+    color: #b0b0b0;  /* Light grey for subtitle */
 }
 
+/* Profile Picture */
+.profile-picture {
+    display: flex;           /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 40px;
+}
+
+.profile-picture img {
+    width: 160px;       /* Fixed width */
+    height: 160px;      /* Fixed height */
+    object-fit: cover;  /* Crop the image to fill the container */
+    border-radius: 50%; /* Circular shape */
+    border: 4px solid rgba(212, 175, 55, 0.9);  /* Transparent gold */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);  /* Luxurious shadow */
+}
+
+/* Section Style */
 section {
-    background: white;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    background: rgba(20, 20, 20, 0.8);  /* Darker, transparent background */
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Darker shadow for emphasis */
 }
 
 h2 {
-    font-size: 2.2rem;
-    color: #FF6F61;
-    margin-bottom: 15px;
+    font-size: 2.6rem;
+    color: #d4af37;  /* Gold for headers */
+    margin-bottom: 20px;
     font-weight: 600;
+    border-bottom: 2px solid #444;  /* Darker underline */
+    padding-bottom: 10px;
 }
 
-p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+p, ul {
+    font-size: 1.2rem;
+    color: #e0e0e0;  /* Light grey for text */
 }
 
 ul {
-    margin-left: 20px;
-    font-size: 1rem;
+    list-style-type: none;
+    padding-left: 0;
 }
 
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
 a {
-    color: #FF6F61;
+    color: #1e90ff;  /* Bright blue for links */
     text-decoration: none;
 }
 
@@ -72,13 +103,35 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Project and Experience Items */
+.project-item, .experience-item {
+    background: rgba(30, 30, 30, 0.9);  /* Darker, semi-transparent background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+}
+
+.project-item h3, .experience-item h3 {
+    color: #d4af37;  /* Gold for item titles */
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.project-item p, .experience-item p {
+    font-size: 1.2rem;
+    color: #e0e0e0;  /* Light grey for text */
+}
+
+/* Footer */
 footer {
-    background: #FF9A9E;
-    color: white;
+    background: rgba(15, 15, 15, 0.85);  /* Transparent dark grey */
+    color: #ffffff;
     text-align: center;
     padding: 20px;
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /* Luxurious shadow */
 }
 
 footer p {
@@ -86,21 +139,33 @@ footer p {
     font-size: 1rem;
 }
 
-.project-item, .experience-item {
-    background: #FFE0E0;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.project-item h3, .experience-item h3 {
-    color: #FF6F61;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.project-item p, .experience-item p {
+/* Button Styles */
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 1rem;
-    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
